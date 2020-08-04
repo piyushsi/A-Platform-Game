@@ -519,6 +519,8 @@ function runLevel(level, Display) {
       if (state.status == "playing") {
         return true;
       } else if (ending > 0) {
+        document.querySelector(".player").style = "";
+
         ending -= time;
         return true;
       } else {
